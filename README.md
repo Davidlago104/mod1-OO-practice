@@ -18,33 +18,41 @@ The below are the methods that must be present on your models. Feel free to buil
 
 ## Deliverables
 
-Build the following methods on the Author class
+Build the following methods on the Band class
 
-+ Author.all
-  + returns an array of all authors
-+ Author#articles
-  + returns a list of articles the author has written
-+ Author#magazines
-  + should return a list of magazines for which the author has written  
-+ Author#add_article(title, magazine)
-  + given a title and a magazine, creates a new article and associates it with that author and that magazine.
-+  Author#find_specialties
-   + returns the categories of the magazines for which the author has written
+ An array of all bands
 
-Build out the following methods on the Article class
+ An array of venues that a band has played at
 
-+ Article.all
-  + returns an array of all articles
-+ Article#author
-  + returns the author for that given article
-+ Article#magazine
-  + returns the magazine for that given article
+ An array of concerts that the band has played
 
-Build out the following methods on the Magazine class
+ Given a venue, a way for a band to create a new concert
 
-+ Magazine.all
-  + returns an array of all magazines
-+ Magazine.find_by_name(name)
-  + given a string of magazine name, returns the first magazine that matches
-+ Magazine#article_titles
-  + returns a list of the titles of all articles written for that magazine
+ The average fill percentage of a band's concerts
+
+ A method to update attendance to a concert
+
+ The total attendance of all concerts a band has played
+
+
+
+Build out the following methods on the Venue class
+
+  An array of all venues
+
+  An array of all bands that have played at that venue
+
+  An array of all concerts at that venue
+
+  The total attendance of all concerts at a particular venue
+
+
+Build out the following methods on the Concert class
+
+  Attendance should start at 0
+
+  An array of all concerts
+
+  The band that is playing at a particular concert
+
+  A method to add attendance to a concert
